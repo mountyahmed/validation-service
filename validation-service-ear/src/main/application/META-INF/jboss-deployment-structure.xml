@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+<deployment>
+    <dependencies>
+        <module name="org.slf4j" />
+        <module name="org.springframework">
+            <exports> <include path="META-INF**" /> <include path="org**" /> </exports>
+            <imports> <include path="META-INF**" /> <include path="org**" /> </imports>
+        </module>
+        <module name="javax.faces.api" meta-inf="import" export="true" annotations="true" />
+        <module name="com.sun.jsf-impl" meta-inf="import" export="true" annotations="true" />
+    </dependencies>
+</deployment>
+</jboss-deployment-structure>
